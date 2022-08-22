@@ -1,0 +1,33 @@
+.footer-social__title {
+  font-weight: $font-weight-bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $color-main-light;
+}
+
+.footer-social__list {
+  display: flex;
+  margin-top: 20px;
+  gap: $footer-soc-gap;
+}
+
+.footer-social__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $border-radius;
+  background-color: $footer-social-color;
+  transition: background-color $trasition-cubic-bazier;
+}
+
+.footer-social__icon {
+  display: flex;
+  fill: $color-main-light;
+}
+
+.footer-social__link:hover,
+.footer-social__link:focus {
+  background-color: $activ-logo-color;
+}

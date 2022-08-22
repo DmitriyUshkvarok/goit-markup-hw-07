@@ -1,0 +1,28 @@
+.commands-social {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comands-social__link {
+  width: 44px;
+  height: 44px;
+  border-radius: $border-radius;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: currentColor;
+  color: $social-standart-color;
+  transition: fill $trasition-cubic-bazier,
+    background-color $trasition-cubic-bazier;
+}
+
+.comands-social__icon {
+  display: block;
+}
+
+.comands-social__link:hover,
+.comands-social__link:focus {
+  background-color: $activ-logo-color;
+  fill: $color-main-light;
+}

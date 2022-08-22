@@ -1,0 +1,38 @@
+.modal-window__btn-closed {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: $color-main-light;
+  transition: background-color $trasition-cubic-bazier,
+    border-color $trasition-cubic-bazier,
+    transform $trasition-cubic-bazier, color $trasition-cubic-bazier;
+}
+
+.modal-window__btn-closed:hover,
+.modal-window__btn-closed:focus {
+  transform: rotate(90deg);
+  background-color: rgba(33, 150, 243, 0.9);
+  border-color: none;
+  outline: none;
+}
+
+.modal-window__closed-icon {
+  position: absolute;
+  display: block;
+  fill: #000000;
+  transition: fill $trasition-cubic-bazier;
+}
+
+.modal-window__btn-closed:hover .modal-window__closed-icon,
+.modal-window__btn-closed:focus .modal-window__closed-icon {
+  fill: currentColor;
+}
