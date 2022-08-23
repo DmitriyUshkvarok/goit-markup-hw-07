@@ -12,14 +12,17 @@
 }
 
 .footer-social__link {
+  @include flexCenter();
   width: 44px;
   height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: $border-radius;
   background-color: $footer-social-color;
   transition: background-color $trasition-cubic-bazier;
+
+  &:hover,
+  &:focus {
+    background-color: $activ-logo-color;
+  }
 }
 
 .footer-social__icon {
@@ -27,7 +30,3 @@
   fill: $color-main-light;
 }
 
-.footer-social__link:hover,
-.footer-social__link:focus {
-  background-color: $activ-logo-color;
-}

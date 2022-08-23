@@ -1,8 +1,9 @@
 // utilits
 @import "./utils/variables";
 @import "./base/normalize";
-@import "./components/global-styles";
+@import "./utils/global-styles";
 @import "./utils/visually-hidden";
+@import"./utils/mixin";
 // header
 @import "./components/page-header";
 @import "./components/header-footer-logo";

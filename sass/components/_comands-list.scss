@@ -1,6 +1,5 @@
 .comands-list {
-  display: flex;
-  justify-content: space-between;
+   @include flexJustify();
   flex-wrap: wrap;
   gap: $flex-list-gap;
 }

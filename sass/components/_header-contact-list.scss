@@ -10,6 +10,7 @@
 }
 
 .contact-list__link {
+  @include flexCenter();
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -17,18 +18,15 @@
   padding-top: 25px;
   padding-bottom: 25px;
   fill: currentColor;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: color $trasition-cubic-bazier;
+
+  &:hover,
+  &:focus {
+    color: $activ-logo-color;
+  }
 }
 
 .contact-list__icon {
   display: inline-flex;
   margin-right: 10px;
-}
-
-.contact-list__link:hover,
-.contact-list__link:focus {
-  color: $activ-logo-color;
 }

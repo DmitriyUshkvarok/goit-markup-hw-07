@@ -2,6 +2,11 @@
   font-style: normal;
   color: $color-main-light;
   transition: color $trasition-cubic-bazier;
+
+  &:hover,
+  &:focus {
+    color: $activ-logo-color;
+  }
 }
 
 .footer-link__mail,
@@ -9,13 +14,10 @@
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   transition: $trasition-cubic-bazier;
+
+  &:hover,
+  &:focus {
+    color: $activ-logo-color;
+  }
 }
 
-.footer-adress__link:hover,
-.footer-link__mail:hover,
-.footer-link__phone:hover,
-.footer-adress__link:focus,
-.footer-link__mail:focus,
-.footer-link__phone:focus {
-  color: $activ-logo-color;
-}

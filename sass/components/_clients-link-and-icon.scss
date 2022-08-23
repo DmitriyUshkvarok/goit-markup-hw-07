@@ -1,7 +1,5 @@
 .clients-list__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter();
   width: 170px;
   height: 92px;
   fill: currentColor;
@@ -11,14 +9,15 @@
   cursor: pointer;
   transition: color $trasition-cubic-bazier,
     border-color $trasition-cubic-bazier;
+
+  &:hover,
+  &:focus .clients-list__icon {
+    color: $activ-logo-color;
+    border-color: $activ-logo-color;
+  }
 }
 
 .clients-list__icon {
   fill: currentColor;
 }
 
-.clients-list__link:hover,
-.clients-list__link:focus .clients-list__icon {
-  color: $activ-logo-color;
-  border-color: $activ-logo-color;
-}

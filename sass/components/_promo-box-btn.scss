@@ -15,9 +15,10 @@
   display: block;
   margin-top: 30px;
   transition: background-color $trasition-cubic-bazier;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-hover-color;
+  }
 }
 
-.promo-box__btn:hover,
-.promo-box__btn:focus {
-  background-color: $btn-hover-color;
-}

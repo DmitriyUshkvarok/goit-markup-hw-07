@@ -1,5 +1,4 @@
 .peculiarities__list {
-  display: flex;
-  justify-content: space-between;
+  @include flexJustify();
   gap: $flex-list-gap;
 }

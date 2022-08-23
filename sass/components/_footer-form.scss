@@ -23,24 +23,22 @@
   padding: 15px;
   color: rgba(255, 255, 255, 0.6);
   margin-right: 12px;
-}
 
-.footer-form__email:focus {
-  border-color: $activ-logo-color;
-  outline: $activ-logo-color;
-}
+  &:focus {
+    border-color: $activ-logo-color;
+    outline: $activ-logo-color;
+  }
 
-.footer-form__email::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 1.25;
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.25;
+  }
 }
 
 .footer-form__btn {
-  display: flex;
+ @include flexCenter();
   width: 200px;
   height: 50px;
-  justify-content: center;
-  align-items: center;
   background-color: $activ-logo-color;
   border: none;
   border-radius: $border-radius-button;
@@ -51,6 +49,11 @@
   letter-spacing: 0.06em;
   color: $color-main-light;
   transition: background-color $trasition-cubic-bazier;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-hover-color;
+  }
 }
 
 .footer-form__icon {
@@ -58,7 +61,3 @@
   fill: $color-main-light;
 }
 
-.footer-form__btn:hover,
-.footer-form__btn:focus {
-  background-color: $btn-hover-color;
-}
