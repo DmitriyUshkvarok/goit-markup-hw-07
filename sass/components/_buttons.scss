@@ -1,37 +1,32 @@
-// promo buttons
-.promo-box__btn {
+// buttons
+.btn {
   @include buttonsProperties();
+  @include flexCenter();
+  &:hover,
+  &:focus {
+    background-color: $btn-hover-color;
+  }
+}
+
+.btn--large {
   width: 216px;
   height: 50px;
   text-align: center;
   margin: 0 auto;
   display: block;
   margin-top: 30px;
-
-  &:hover,
-  &:focus {
-    background-color: $btn-hover-color;
-  }
 }
 
-// modal form buttons
-.feedback-form__btn {
-  @include flexCenter();
-  @include buttonsProperties();
-  width: 200px;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
+.btn--margin-top {
   margin-top: 30px;
-
-  &:hover,
-  &:focus {
-    background-color: $btn-hover-color;
-  }
 }
 
-// modal button closed
-.modal-window__btn-closed {
+.btn--icon {
+  margin-left: 10px;
+}
+
+// button closed
+.btn-closed {
   @include flexCenter();
   position: absolute;
   top: 8px;
@@ -56,30 +51,14 @@
   }
 }
 
-.modal-window__closed-icon {
+.btn-closed__icon {
   position: absolute;
   display: block;
   fill: #000000;
   transition: fill $trasition-cubic-bazier;
 }
 
-.modal-window__btn-closed:hover .modal-window__closed-icon,
-.modal-window__btn-closed:focus .modal-window__closed-icon {
+.btn-closed:hover .btn-closed__icon,
+.btn-closed:focus .btn-closed__icon {
   fill: currentColor;
-}
-
-// footer buttons
-.footer-form__btn {
-  @include flexCenter();
-  @include buttonsProperties();
- 
-  &:hover,
-  &:focus {
-    background-color: $btn-hover-color;
-  }
-}
-
-.footer-form__icon {
-  margin-left: 10px;
-  fill: $color-main-light;
 }

@@ -108,11 +108,12 @@ textarea {
 }
 
 .modal-form__label-check {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.16;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
   color: $description-color;
 }
 
@@ -156,5 +157,6 @@ input[type="checkbox"] {
   color: $activ-logo-color;
   margin-left: 4px;
   transition: $trasition-cubic-bazier;
+  letter-spacing: 0.03em;
+  line-height: 1.71px;
 }
-

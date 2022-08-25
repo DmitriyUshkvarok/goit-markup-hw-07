@@ -1,20 +1,27 @@
-.page-header__logo {
+.logo {
   @include logoProperties();
   color: $second-logo-color;
-  margin-right: 93px;
+  display: inline-block;
+}
+
+.logo__accent {
+  color: $activ-logo-color;
+}
+
+.logo--padding {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-.page-header__logo span,
-.footer__logo span {
-  color: $activ-logo-color;
+.logo--margin {
+  margin-right: 93px;
 }
 
-// footer logo
-.footer__logo {
-  @include logoProperties();
-  display: block;
+.logo--light{
   color: $color-main-light;
-  margin-bottom: 20px;
 }
+
+.logo--margin-bottom{
+ margin-bottom: 20px;
+}
+

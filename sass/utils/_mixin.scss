@@ -35,6 +35,9 @@
   box-shadow: $shadows-buttons;
   border-radius: $border-radius-button;
   transition: background-color $trasition-cubic-bazier;
+  margin-left: auto;
+  margin-right: auto;
+  fill: $color-main-light;
 }
 
 // mixin for logo

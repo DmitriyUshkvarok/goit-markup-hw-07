@@ -318,7 +318,7 @@ body {
   margin: -1px;
 }
 
-.promo-box__btn {
+.btn {
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -334,18 +334,9 @@ body {
   border-radius: 4px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 216px;
-  height: 50px;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  margin-top: 30px;
-}
-.promo-box__btn:hover, .promo-box__btn:focus {
-  background-color: #188ce8;
-}
-
-.feedback-form__btn {
+  margin-left: auto;
+  margin-right: auto;
+  fill: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,32 +346,29 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 200px;
-  height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
-  border: none;
-  cursor: pointer;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 200px;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
 }
-.feedback-form__btn:hover, .feedback-form__btn:focus {
+.btn:hover, .btn:focus {
   background-color: #188ce8;
 }
 
-.modal-window__btn-closed {
+.btn--large {
+  width: 216px;
+  height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+}
+
+.btn--margin-top {
+  margin-top: 30px;
+}
+
+.btn--icon {
+  margin-left: 10px;
+}
+
+.btn-closed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,7 +393,7 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-window__btn-closed:hover, .modal-window__btn-closed:focus {
+.btn-closed:hover, .btn-closed:focus {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   background-color: rgba(33, 150, 243, 0.9);
@@ -413,7 +401,7 @@ body {
   outline: none;
 }
 
-.modal-window__closed-icon {
+.btn-closed__icon {
   position: absolute;
   display: block;
   fill: #000000;
@@ -421,69 +409,38 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-window__btn-closed:hover .modal-window__closed-icon,
-.modal-window__btn-closed:focus .modal-window__closed-icon {
+.btn-closed:hover .btn-closed__icon,
+.btn-closed:focus .btn-closed__icon {
   fill: currentColor;
 }
 
-.footer-form__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 200px;
-  height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
-  border: none;
-  cursor: pointer;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-form__btn:hover, .footer-form__btn:focus {
-  background-color: #188ce8;
-}
-
-.footer-form__icon {
-  margin-left: 10px;
-  fill: #ffffff;
-}
-
-.page-header__logo {
+.logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: #000000;
-  margin-right: 93px;
+  display: inline-block;
+}
+
+.logo__accent {
+  color: #2196f3;
+}
+
+.logo--padding {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-.page-header__logo span,
-.footer__logo span {
-  color: #2196f3;
+.logo--margin {
+  margin-right: 93px;
 }
 
-.footer__logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  display: block;
+.logo--light {
   color: #ffffff;
+}
+
+.logo--margin-bottom {
   margin-bottom: 20px;
 }
 
@@ -1184,15 +1141,18 @@ textarea:focus {
 }
 
 .modal-form__label-check {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.16;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
   color: #757575;
 }
 
@@ -1242,6 +1202,8 @@ input[type=checkbox] {
   margin-left: 4px;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.03em;
+  line-height: 1.71px;
 }
 
 .footer-subscription-wrapper {
