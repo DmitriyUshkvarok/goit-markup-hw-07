@@ -4,44 +4,32 @@
 @import "./utils/global-styles";
 @import "./utils/visually-hidden";
 @import"./utils/mixin";
+// buttons
+@import"./components/buttons";
+// logo
+@import"./components/logo";
+// titles
+@import "./components/titles";
 // header
 @import "./components/page-header";
-@import "./components/header-footer-logo";
 @import "./components/header-navigation";
 @import "./components/header-contact-list";
 // promo block
-@import "./components/promo-box";
-@import "./components/promo-box-title";
-@import "./components/promo-box-btn";
+@import "./components/section-promo";
 // peculiarities
-@import "./components/peculiarities";
-@import "./components/peculiarities-list";
-@import "./components/peculiarities-mask-icon";
-@import "./components/peculiarities-title";
-@import "./components/peculiarities-description";
+@import "./components/section-peculiarities";
 // craft
-@import "./components/craft";
-@import "./components/craft-comands-clients-tile";
-@import "./components/craft-list";
-@import "./components/craft-label";
-@import "./components/craft__description";
+@import "./components/section-craft";
 // comands
-@import "./components/commands";
-@import "./components/comands-list";
-@import "./components/comands-list-item";
-@import "./components/commands-social";
+@import "./components/section-commands";
 // clients
-@import "./components/clients";
-@import "./components/clients-list";
-@import "./components/clients-link-and-icon";
+@import "./components/section-clients";
 // footer
-@import "./components/footer";
-@import "./components/footer-logo";
-@import "./components/footer-adress-and-link";
-@import "./components/footer-social-box";
+@import "./components/footer-adress";
+@import "./components/footer-social";
 @import "./components/footer-form";
 // modal window
 @import "./components/modal-window";
-@import "./components/modal-btn-closed";
 @import "./components/modal-feedback-form";
+@import "./components/footer-form";
 

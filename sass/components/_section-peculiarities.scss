@@ -1,0 +1,37 @@
+.peculiarities {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.peculiarities__list {
+  @include flexJustify();
+  gap: $flex-list-gap;
+}
+
+.peculiarities__description {
+  line-height: 1.71;
+  color: $description-color;
+  margin-top: 10px;
+}
+
+.peculiarities-mask {
+  position: relative;
+  background-color: $comands-filter-color;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.peculiarities__icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.peculiarities__title {
+  font-weight: $font-weight-bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+}

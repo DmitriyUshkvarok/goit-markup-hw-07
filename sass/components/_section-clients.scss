@@ -1,3 +1,12 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients__list {
+  @include flexJustify();
+}
+
 .clients-list__link {
   @include flexCenter();
   width: 170px;
@@ -20,4 +29,3 @@
 .clients-list__icon {
   fill: currentColor;
 }
-

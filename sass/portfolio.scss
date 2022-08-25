@@ -4,17 +4,20 @@
 @import "./utils/global-styles";
 @import "./utils/visually-hidden";
 @import"./utils/mixin";
+// buttons
+@import"./components/buttons";
+// logo
+@import"./components/logo";
 // header
 @import "./components/page-header";
-@import "./components/header-footer-logo";
 @import "./components/header-navigation";
 @import "./components/header-contact-list";
+//portfolio overlay
+@import "./components/portfolio-overlay";
 // portfolio
-@import "./components/global-portfolio-and-filter-list";
+@import "./components/portfolio-filter-list";
 @import "./components/portfolio-list";
 // footer
-@import "./components/footer";
-@import "./components/footer-logo";
-@import "./components/footer-adress-and-link";
-@import "./components/footer-social-box";
+@import "./components/footer-adress";
+@import "./components/footer-social";
 @import "./components/footer-form";

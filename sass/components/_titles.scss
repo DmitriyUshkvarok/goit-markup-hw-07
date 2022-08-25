@@ -1,0 +1,5 @@
+.craft__title,
+.comands__title,
+.clients__title {
+    @include titleProperties();
+}

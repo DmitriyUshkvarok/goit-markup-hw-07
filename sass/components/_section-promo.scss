@@ -16,3 +16,15 @@
   background-size: cover;
   background-position: center;
 }
+
+.promo-box__title {
+  max-width: 696px;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $color-main-light;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
