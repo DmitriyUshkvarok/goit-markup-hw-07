@@ -483,6 +483,13 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.border-wrappper {
+  border-bottom: 1px solid #f5f4fa;
+  border-left: 1px solid #f5f4fa;
+  border-right: 1px solid #f5f4fa;
+  padding: 20px 24px;
+}
+
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -660,13 +667,6 @@ body {
   font-size: 18px;
   line-height: 1.55;
   color: #ffffff;
-}
-
-.border-wrappper {
-  border-bottom: 1px solid #f5f4fa;
-  border-left: 1px solid #f5f4fa;
-  border-right: 1px solid #f5f4fa;
-  padding: 20px 24px;
 }
 
 .portfolio__title {

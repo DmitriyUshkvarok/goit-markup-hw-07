@@ -444,9 +444,7 @@ body {
   margin-bottom: 20px;
 }
 
-.craft__title,
-.comands__title,
-.clients__title {
+.item-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;

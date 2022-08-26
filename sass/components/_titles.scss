@@ -1,5 +1,3 @@
-.craft__title,
-.comands__title,
-.clients__title {
+.item-title {
     @include titleProperties();
 }
